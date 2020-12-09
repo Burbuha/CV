@@ -15,14 +15,13 @@
 
 <body>
   <nav class="navbar nav-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
+    <div class="container-fluid" id="home">
       <a href="#" class="navbar-brand"><i class="fas fa-code small"></i>Burbovskaya Liudmila</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="#" class='nav-link'>Главная</a></li>
+
+      <div class="menu-button"><span class="menu-btn"></span></div>
+      <div class="menu">
+        <ul class="navbar-nav d-flex flex-column flex-lg-row align-items-center">
+          <li class="nav-item active"><a href="#home" class='nav-link'>Главная</a></li>
           <li class="nav-item"><a href="#about" class='nav-link'>Обо мне</a></li>
           <li class="nav-item"><a href="#exp" class='nav-link'>Опыт работы</a></li>
           <li class="nav-item"><a href="#edu" class='nav-link'>Образование</a></li>
@@ -73,11 +72,11 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
         <p class="lead">Меня зовут <strong>Бурбовская Людмила</strong>. Я успешно окончила курсы
           IT-Academy по созданию веб-сайтов и веб-приложений с использованием HTML, CSS и JavaScript. Мой <a
-            href="https://game-world-map.web.app" target="_blank" class="btn btn-success btn-lg">Итоговый проект</a>
+            href="https://game-world-map.web.app" target="_blank" class="btn btn-success btn-lg">ИТОГОВЫЙ ПРОЕКТ</a>
           признан лучшим на потоке и получил максимальные 10 баллов.
-          <br>Я целеустремленная, тактичная и порядочная. Хороший командный игрок. Готова
+          <br>Я организованная и целеустремленная, тактичная и порядочная. Хороший командный игрок. Готова
           брать на себя ответственность, трудиться, обучаться и повышать профессионализм в области WEB разработки.
-          <br>И я именно тот человек, которого вы ищите в свою команду!
+          Я - Ваш человек!
         </p>
       </div>
 
@@ -107,8 +106,8 @@
         <p>Разработка веб-приложений на JavaScript.
           Мною была разработана и написана браузерная игра-тренажер по изучению столиц и стан мира.
           <br><a href="https://game-world-map.web.app/" target="_blank">Ссылка на итоговый проект</a>
-          <br><a href="https://codepen.io/burbuha/pen/RwRrXQj" target="_blank">Виджет погоды</a>
-          <br><a href="https://codepen.io/burbuha/pen/YzWzNRO" target="_blank">Плагин модального окна</a>
+          <br><a href="https://codepen.io/burbuha/pen/RwRrXQj" target="_blank">Ссылка на виджет погоды</a>
+          <br><a href="https://codepen.io/burbuha/pen/YzWzNRO" target="_blank">Ссылка на плагин модального окна</a>
         </p>
       </div>
       <div class="col-lg-3">
@@ -186,30 +185,6 @@
       <div id="fixed"></div>
     </div>
   </figure>
-
-  <!-- <div class="text-center">
-    <button type='button' id='gifsBtn' class='btn btn-success' data-toggle='collapse' data-target='#gifs'>Открыть
-      блок</button>
-  </div>
-
-  <div id="gifs" class='collapse'>
-    <div class="container-fluid padding">
-      <div class="row text-center">
-        <div class="col-sm-6 col-md-3">
-          <img src="img/1.gif" alt="" class='gif'>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <img src="img/2.gif" alt="" class='gif'>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <img src="img/3.gif" alt="" class='gif'>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <img src="img/4.gif" alt="" class='gif'>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
   <div class="container-fluid padding">
     <div class="row alert text-center">
@@ -304,8 +279,12 @@
         </div>
       </div>
     </div>
+
+    <div id="to-top" class="to-top"><i class="fas fa-arrow-alt-circle-up"></i></div>
+
   </footer>
 
+  <script src="js/index.js"></script>
 
 </body>
 
