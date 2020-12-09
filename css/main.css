@@ -15,7 +15,7 @@ body {
   padding-right: 20px;
 }
 .nav-link {
-  font-style: 1.1em !important;
+  font-size: 1.1em !important;
 }
 .carousel-inner {
   height: 500px;
