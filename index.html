@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Верстка сайта на Bootstrap 4!</title>
+  <title>CV Burbovskaja Liudmila</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -16,17 +16,17 @@
 <body>
   <nav class="navbar nav-expand-md navbar-light bg-light sticky-top">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand"><i class="fas fa-code small"></i>Burbovskaya Liudmila</a>
+      <a href="#" class="navbar-brand"><i class="fas fa-code small"></i>Burbovskaya Liudmila / Бурбовская Людмила</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="#" class='nav-link'>Главная</a></li>
-          <li class="nav-item"><a href="#" class='nav-link'>О нас</a></li>
-          <li class="nav-item"><a href="#" class='nav-link'>Контакты</a></li>
-          <li class="nav-item"><a href="#" class='nav-link'>Сервисы</a></li>
-          <li class="nav-item"><a href="#" class='nav-link'>Команда</a></li>
+          <li class="nav-item"><a href="#about" class='nav-link'>Обо мне</a></li>
+          <li class="nav-item"><a href="#exp" class='nav-link'>Опыт работы</a></li>
+          <li class="nav-item"><a href="#edu" class='nav-link'>Образование</a></li>
+          <li class="nav-item"><a href="#skills" class='nav-link'>Skills</a></li>
         </ul>
       </div>
     </div>
@@ -37,7 +37,6 @@
       <li data-target='#slides' data-slide-to='0' class='active'></li>
       <li data-target='#slides' data-slide-to='1'></li>
       <li data-target='#slides' data-slide-to='2'></li>
-      <!-- <li data-target='#slides' data-slide-to='3'></li> -->
     </ul>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -45,8 +44,9 @@
         <div class="carousel-caption">
           <h1 class="display-2">WEB developer</h1>
           <h3>Учусь программировать</h3>
-          <a href="https://github.com/Burbuha" type='button' class='btn btn-outline-light btn-lg'>GitHub</a>
-          <a href="https://codepen.io/burbuha" type='button' class='btn btn-warning btn-lg'>CodePen</a>
+          <a href="https://github.com/Burbuha" target="_blank" type='button'
+            class='btn btn-outline-light btn-lg'>GitHub</a>
+          <a href="https://codepen.io/burbuha" target="_blank" type='button' class='btn btn-warning btn-lg'>CodePen</a>
         </div>
       </div>
       <div class="carousel-item">
@@ -57,25 +57,28 @@
         <div class="carousel-caption">
           <h1 class="display-2">WEB developer</h1>
           <h3>Учусь программировать</h3>
-          <a href="https://github.com/Burbuha" type='button' class='btn btn-outline-light btn-lg'>GitHub</a>
-          <a href="https://codepen.io/burbuha" type='button' class='btn btn-warning btn-lg'>CodePen</a>
+          <a href="https://github.com/Burbuha" target="_blank" type='button'
+            class='btn btn-outline-light btn-lg'>GitHub</a>
+          <a href="https://codepen.io/burbuha" target="_blank" type='button' class='btn btn-warning btn-lg'>CodePen</a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="container-fluid">
-    <div class="row jumbotron">
+    <div class="row jumbotron" id="about">
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-6 col-xl-6">
         <img src="img/photo.jpg" alt="Бурбовская Людмила" class="photo">
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <p class="lead">Меня зовут Бурбовская Людмила. Я успешно окончила курсы
-          IT-Academy по веб-разработке. Мой <a href="https://game-world-map.web.app"
-            class="btn btn-success btn-lg">Итоговый проект</a> признан лучшим на потоке и
+        <p class="lead">Меня зовут <strong>Бурбовская Людмила</strong>. Я успешно окончила курсы
+          IT-Academy по созданию веб-сайтов и веб-приложений с использованием HTML, CSS и JavaScript. Мой <a
+            href="https://game-world-map.web.app" target="_blank" class="btn btn-success btn-lg">Итоговый проект</a>
+          признан лучшим на
+          потоке и
           получил максимальные 10 баллов. Я целеустремленная, тактичная и порядочная. Хороший командный игрок. Готова
           брать на себя ответственность, трудиться, обучаться и повышать профессионализм в области WEB разработки. И я
-          именно тот человек, которого вы ищите в свою команду.
+          именно тот человек, которого вы ищите в свою команду!
         </p>
       </div>
 
@@ -85,12 +88,11 @@
   <div class="container-fluid">
     <div class="row text-center alert">
       <div class="col-12">
-        <h2 class="display-4">Опыт работы</h2>
+        <h2 class="display-4" id="exp">Опыт работы</h2>
       </div>
       <hr>
       <div class="col-12 padding">
-        <p class="lead">У меня нет пока коммерческого опыта работы в веб-разработке, но большой опыт работы с людьми,
-          горящие глаза и огромное желание развиваться.</p>
+        <p class="lead">У меня большой опыт работы с людьми, горящие глаза и огромное желание развиваться!</p>
       </div>
     </div>
   </div>
@@ -105,9 +107,9 @@
         <h5>ИЮЛЬ 2020 – НОЯБРЬ 2020</h5>
         <p>Разработка веб-приложений на JavaScript.
           Мною была разработана и написана браузерная игра-тренажер по изучению столиц и стан мира.
-          <br><a href="https://game-world-map.web.app/">Ссылка на итоговый проект</a>
-          <br><a href="">Виджет погоды</a>
-          <br><a href="">Плагин модального окна</a>
+          <br><a href="https://game-world-map.web.app/" target="_blank">Ссылка на итоговый проект</a>
+          <br><a href="https://codepen.io/burbuha/pen/RwRrXQj" target="_blank">Виджет погоды</a>
+          <br><a href="https://codepen.io/burbuha/pen/YzWzNRO" target="_blank">Плагин модального окна</a>
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
@@ -118,7 +120,7 @@
         <h5>МАРТ 2020 – ИЮЛЬ 2020</h5>
         <p>Создание веб-сайтов с использованием HTML, CSS и JavaScript.
           Мною разработан и свёрстан многостраничный сайт по курсам кройки и шитья.
-          <br><a href="https://burbuha.github.io/">Ссылка на итоговый проект</a>
+          <br><a href="https://burbuha.github.io/" target="_blank">Ссылка на итоговый проект</a>
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3">
@@ -149,7 +151,7 @@
   <div class="container-fluid padding">
     <div class="row padding">
       <div class="col-lg-7">
-        <h2 class="display-4">Образование</h2>
+        <h2 class="display-4" id="edu">Образование</h2>
         <br><br>
         <h5>БЕЛОРУССКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ • 2003</h5>
         <p>Географический факультет, географ, преподаватель географии, картограф. Средний балл – 4,8 (по 5-бальной
@@ -161,13 +163,13 @@
           шкале)</p>
         <br>
         <h5>IT - ACADEMY • 2020</h5>
-        <p>ООО "Образовательный центр программирования и высоких технологий", Разработка веб-сайтов с использованием
+        <p>ООО "Образовательный центр программирования и высоких технологий". Разработка веб-сайтов с использованием
           HTML, CSS и JS (HTML, CSS, обтекаемая верстка, макеты, формы, селекторы,
           CSS-анимация, HTML5, CSS3, адаптивная и кроссбраузерная верстка, медиазапросы, позиционирование, Flex, Grid,
           препроцессоры). Средний балл – 10,0</p>
         <br>
         <h5>IT - ACADEMY • 2020</h5>
-        <p>ООО "Образовательный центр программирования и высоких технологий", Разработка веб-приложений на JavaScript
+        <p>ООО "Образовательный центр программирования и высоких технологий". Разработка веб-приложений на JavaScript
           (Функции, массивы, хэши; ООП; работа с DOM; обработка событий; SVG, Canvas;
           JSON, MVC; SPA; GIT, Firebase).
           Средний балл – 10,0</p>
@@ -186,7 +188,7 @@
     </div>
   </figure>
 
-  <div class="text-center">
+  <!-- <div class="text-center">
     <button type='button' id='gifsBtn' class='btn btn-success' data-toggle='collapse' data-target='#gifs'>Открыть
       блок</button>
   </div>
@@ -208,12 +210,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="container-fluid padding">
     <div class="row alert text-center">
       <div class="col-12">
-        <h1 class="dislplay-4">SKILLS</h1>
+        <h1 class="dislplay-4" id="skills">SKILLS</h1>
       </div>
     </div>
   </div>
@@ -274,6 +276,14 @@
         </div>
         <div class="card-body">
           <h4 class='card-title'>D3JS</h4>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <i class="fas fa-language"></i>
+        </div>
+        <div class="card-body">
+          <h4 class='card-title'>English A2-B1</h4>
         </div>
       </div>
     </div>

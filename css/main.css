@@ -32,6 +32,11 @@ body {
   transform: translateY(-30%);
   text-shadow: 1px 1px 10px #000;
 }
+.lead {
+  padding-top: 50px;
+  font-size: 1.5em;
+  line-height: 2em;
+}
 .jumbotron {
   padding: 1em;
   border-radius: 0;
@@ -78,13 +83,17 @@ body {
 .fa-node-js {
   color: #d3a230;
 }
+.fa-language {
+  color: green;
+}
 .fa-code,
 .fa-handshake,
 .fa-map,
 .fa-css3,
 .fa-node-js,
 .fa-bold,
-.fa-github {
+.fa-github,
+.fa-language {
   font-size: 4em;
 }
 .firebase,
