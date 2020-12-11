@@ -324,4 +324,8 @@ footer {
     width: 32px;
     height: 32px;
   }
+  .navigation,
+  .social {
+    padding: 0;
+  }
 }
