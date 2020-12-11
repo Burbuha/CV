@@ -107,6 +107,15 @@ body {
 }
 .card {
   padding: 20px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.card-img-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .card-body {
   padding: 0;
@@ -197,6 +206,11 @@ footer {
     border-radius: 10px;
     cursor: pointer;
     z-index: 100;
+  }
+  .img-edu {
+    height: 500px;
+    display: block;
+    margin: 0 auto;
   }
   .menu-btn {
     position: absolute;
@@ -291,5 +305,23 @@ footer {
   }
   .alert {
     width: 100%;
+  }
+  .social a {
+    padding: 20px 0;
+  }
+  .card .fa-code,
+  .fa-handshake,
+  .fa-map,
+  .fa-css3,
+  .fa-node-js,
+  .fa-bold,
+  .fa-github,
+  .fa-language {
+    font-size: 2em;
+  }
+  .firebase,
+  .d3 {
+    width: 32px;
+    height: 32px;
   }
 }
